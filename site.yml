@@ -8,10 +8,10 @@
     - role: download
     - role: raspberrypi
 
-- hosts: master
+- hosts: main
   become: yes
   roles:
-    - role: k3s/master
+    - role: k3s/main
 
 - hosts: node
   become: yes
